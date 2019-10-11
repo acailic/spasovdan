@@ -8,7 +8,7 @@ var payDay = document.getElementById("PayDay");
 
 // Is today's date the 15 or the 30th? If yes...
 
-if (today == 1) {
+if (today == 11) {
     message = "Vaistinu je legla! najradosniji srpski praznik : ) \n\n\n";
     gifImage.id = "Id";
     gifImage.className = "class";
