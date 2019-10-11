@@ -11,7 +11,3 @@ Creating simple applications in Javascript in functional ways, this webpage whic
 - [] Output when the next pay day is or how many days away it is
 - [] Error messages. Cannot find date, invalid date format, etc
 - [] Gifs!
-
-## Inspiration
-
-* [Is it iced coffee weather?](http://isiticedcoffeeweather.com/)
