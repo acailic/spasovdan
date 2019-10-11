@@ -1,4 +1,5 @@
 var message = null;
+var gifImage = document.createElement("IMG");
 var d = new Date();
 var today = d.getDate(); // return the day of the month as a number 0-30
 var month = d.getMonth(); // return month as a number 0-11
@@ -7,14 +8,17 @@ var payDay = document.getElementById("PayDay");
 
 // Is today's date the 15 or the 30th? If yes...
 
-if ( today == 1 || today == 11 ) {
-	message = "Vaistinu je legla! najradosniji srpski praznik : )";
+if (today == 1) {
+    message = "Vaistinu je legla! najradosniji srpski praznik : ) \n\n\n";
+    gifImage.id = "Id";
+    gifImage.className = "class";
+    gifImage.src = "https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif";
 }
 
 // If not...
 
 else {
-	message = "Cvrc. Danas nije Spasovdan :(";
+    message = "Cvrc. Danas nije Spasovdan :(";
 }
 
 // Defining the proper ordinalIndicator for today's date
@@ -24,4 +28,5 @@ var datemessage = ("Danas je " + today + "  " + months[month] + ". "); // months
 
 // Display message
 
-payDay.innerText = datemessage + message;
+payDay.innerText = datemessage + message ;
+payDay.appendChild(gifImage) ;
