@@ -6,9 +6,14 @@ var month = d.getMonth(); // return month as a number 0-11
 var months = ["Januar", "Februar", "Mart", "April", "Maj", "Jun", "Jul", "Avgust", "Septembar", "Oktobar", "Novembar", "Decembar"]
 var payDay = document.getElementById("PayDay");
 
-// Is today's date the 15 or the 30th? If yes...
 
-if (today == 11) {
+var is_weekend =  function(d){
+    return d.getDay() == 6 || d.getDay() == 0;
+}
+
+
+
+if (!is_weekend(d) && today == 11) {
     message = "Vaistinu je legla! najradosniji srpski praznik : ) \n\n\n";
     gifImage.id = "Id";
     gifImage.className = "class";
